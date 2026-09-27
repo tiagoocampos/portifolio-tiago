@@ -1,0 +1,73 @@
+[33mcommit ca68d9b75c9fba904afa468a8a98b85c3ff080a4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Tiago Campos <droiddzn68@gmail.com>
+Date:   Sun Sep 27 20:33:43 2026 -0300
+
+    refatorando design
+
+ components.json                              |   2 [32m+[m[31m-[m
+ eslint.config.js                             |   6 [32m+[m[31m-[m
+ index.html                                   |  31 [32m+[m[31m-[m
+ jsconfig.json                                |  12 [31m-[m
+ package-lock.json                            | 481 [32m+++++++++++++++++++++++++[m[31m--[m
+ package.json                                 |  17 [32m+[m[31m-[m
+ public/curriculo-tiago-campos.pdf            | 110 [32m++++++[m
+ public/favicon.svg                           |   4 [32m+[m
+ public/foto.png                              | Bin [31m0[m -> [32m487056[m bytes
+ src/public/foto.jpeg => public/foto2.jpeg    | Bin
+ public/videos/alo-delivery.jpg               | Bin [31m0[m -> [32m36169[m bytes
+ public/videos/alo-delivery.mp4               | Bin [31m0[m -> [32m361939[m bytes
+ public/videos/expenses-control.jpg           | Bin [31m0[m -> [32m33001[m bytes
+ public/videos/expenses-control.mp4           | Bin [31m0[m -> [32m171172[m bytes
+ public/videos/ipe-mudas.jpg                  | Bin [31m0[m -> [32m24950[m bytes
+ public/videos/ipe-mudas.mp4                  | Bin [31m0[m -> [32m499680[m bytes
+ public/videos/kirvo.jpg                      | Bin [31m0[m -> [32m18275[m bytes
+ public/videos/kirvo.mp4                      | Bin [31m0[m -> [32m274286[m bytes
+ public/videos/mandala-de-cristais.jpg        | Bin [31m0[m -> [32m31616[m bytes
+ public/videos/mandala-de-cristais.mp4        | Bin [31m0[m -> [32m410944[m bytes
+ public/videos/pipocaflix-2.jpg               | Bin [31m0[m -> [32m98041[m bytes
+ public/videos/pipocaflix.jpg                 | Bin [31m0[m -> [32m205556[m bytes
+ public/videos/url-shortener.jpg              | Bin [31m0[m -> [32m35387[m bytes
+ src/App.jsx                                  |  24 [31m--[m
+ src/App.tsx                                  |  19 [32m++[m
+ src/components/About.jsx                     |  11 [31m-[m
+ src/components/Header.jsx                    |  12 [31m-[m
+ src/components/Hero.jsx                      |  32 [31m--[m
+ src/components/Skills.jsx                    |   7 [31m-[m
+ src/components/about/About.tsx               |  25 [32m++[m
+ src/components/brand/Glow.tsx                |  18 [32m+[m
+ src/components/brand/Logo.tsx                |  17 [32m+[m
+ src/components/contact/Contact.tsx           |  43 [32m+++[m
+ src/components/hero/Hero.tsx                 |  86 [32m+++++[m
+ src/components/icons/BrandIcon.tsx           |  35 [32m++[m
+ src/components/icons/icon-map.ts             |  57 [32m++++[m
+ src/components/layout/Container.tsx          |  15 [32m+[m
+ src/components/layout/Footer.tsx             |  22 [32m++[m
+ src/components/layout/Header.tsx             |  69 [32m++++[m
+ src/components/layout/Section.tsx            |  26 [32m++[m
+ src/components/motion/Reveal.tsx             |  23 [32m++[m
+ src/components/motion/Typewriter.tsx         |  38 [32m+++[m
+ src/components/projects/ProjectCard.tsx      | 166 [32m+++++++++[m
+ src/components/projects/Projects.tsx         |  29 [32m++[m
+ src/components/skills/SkillCard.tsx          |  24 [32m++[m
+ src/components/skills/Skills.tsx             |  35 [32m++[m
+ src/components/ui/{button.jsx => button.tsx} |  13 [32m+[m[31m-[m
+ src/components/ui/dialog.tsx                 |  87 [32m+++++[m
+ src/components/ui/sheet.tsx                  | 108 [32m++++++[m
+ src/data/profile.ts                          |  17 [32m+[m
+ src/data/projects.ts                         | 108 [32m++++++[m
+ src/data/skills.ts                           |  79 [32m+++++[m
+ src/index.css                                |  15 [32m+[m[31m-[m
+ src/lib/utils.js                             |   6 [31m-[m
+ src/lib/utils.ts                             |   6 [32m+[m
+ src/main.jsx                                 |  10 [31m-[m
+ src/main.tsx                                 |  10 [32m+[m
+ src/pages/Home.jsx                           |  20 [31m--[m
+ src/pages/Home.tsx                           |  17 [32m+[m
+ src/routes.jsx                               |  14 [31m-[m
+ src/routes.tsx                               |  12 [32m+[m
+ src/vite-env.d.ts                            |   1 [32m+[m
+ tsconfig.app.json                            |  29 [32m++[m
+ tsconfig.json                                |   7 [32m+[m
+ tsconfig.node.json                           |  23 [32m++[m
+ vite.config.js => vite.config.ts             |   0
+ 66 files changed, 1890 insertions(+), 188 deletions(-)

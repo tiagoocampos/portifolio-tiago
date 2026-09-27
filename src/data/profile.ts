@@ -12,6 +12,5 @@ export const profile = {
   links: {
     github: "https://github.com/tiagoocampos/",
     linkedin: "https://www.linkedin.com/in/tiagocamposdasilva/",
-    nuvi: "https://nuvi.dev",
   },
 } as const

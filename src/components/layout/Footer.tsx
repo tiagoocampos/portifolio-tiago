@@ -6,17 +6,7 @@ export function Footer() {
       <p>
         © {new Date().getFullYear()} {profile.name}. Construído com React, Vite e Tailwind CSS.
       </p>
-      <p className="mt-1">
-        Estúdio{" "}
-        <a
-          href={profile.links.nuvi}
-          target="_blank"
-          rel="noreferrer"
-          className="font-medium text-foreground transition-colors hover:text-primary"
-        >
-          Nuvi
-        </a>
-      </p>
+      
     </footer>
   )
 }
